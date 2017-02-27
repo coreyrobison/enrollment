@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enroll Today with Veteran's Advantage</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="enrollment.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_signup" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+        <a class="navbar-brand" href="/"><img src="/images/va-logo.png" style="height:32px;"></a>
+        <div class="collapse navbar-collapse" id="nav_signup">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active" data-step-nav="1">
+                    <a href="#">
+                        <div class="nav-active-container"><span class="nav-active-circle">1 </span>
+                            <div> Personal Infomation</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="2">
+                    <a href="#">
+                        <div class="nav-active-container"><span>2 </span>
+                            <div> Member Plan</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="3">
+                    <a href="#">
+                        <div class="nav-active-container"><span>3 </span>
+                            <div> Family Members</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="4">
+                    <a href="#">
+                        <div class="nav-active-container"><span>4</span>
+                            <div> Wounded Vet</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="5">
+                    <a href="#">
+                        <div class="nav-active-container"><span>5 </span>
+                            <div> Payment Method</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Start Main Container-->
+    <div class="container">
+        <div class="row">
+
+            <!--Start Main Form-->
+            <div class="col-sm-7">
+                <img class="img-responsive header-img" src="images/partner/amtrak/partnerheader_amtrak.png" style="padding-top:25px;">
+
+                <form action="run_enrollment.php" method="post" id="enrollment_form">
+                    <legend>Tell Us About You</legend>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input type="email" class="form-control enrollment-input" id="first_name" aria-describedby="emailHelp" placeholder="Please Enter First Name"
+                            required data-summary-id="first_name_summary">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="email" class="form-control enrollment-input" id="last_name" aria-describedby="emailHelp" placeholder="Please Enter Last Name"
+                            required data-summary-id="last_name_summary">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please Enter Email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Let's Start The Enrollment</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+I am a U.S. veteran: active duty, retired military, current or former National Guard or Reservist.</label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        I am immediate family: spouse, father, mother, brother, sister, or daugther of a Veteran, Guardsman, Reservist, or servicemember (living or deceased).
+      </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Choose Your Password</label>
+                        <input type="password" class="form-control enrollment-input" id="first_name" aria-describedby="emailHelp" placeholder="Choose Your Password"
+                            required data-summary-id="first_name_summary">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleSelect1">In which branch of the military did you or your family member serve?</label>
+                        <select class="form-control" id="exampleSelect1">
+                                        <option selected>Choose...</option>
+                                        <option value="Army">U.S. Army</option>
+                                        <option value="Navy">U.S. Navy</option>
+                                        <option value="Airforce">U.S. Air Force</option>
+                                        <option value="Marines">U.S. Marine Corps</option>
+                                        <option value="Coastguard">U.S. Coast Guard</option>
+                                        <option value="NationalGuard">U.S. Army National Guard</option>
+                                        <option value="Air NationalGuard">U.S. Air National Guard</option>
+                                        <option value="Reserves">U.S. Army Reserves</option>
+                                        <option value="NavalReserves">U.S. Naval Reserves</option>
+                                        <option value="AirReserves">U.S. Air Force Reserves</option>
+                                        <option value="MarineReserves">U.S. Marine Corps Reserves</option>
+                                        <option value="CoastguardReserves">U.S. Coast Guard Reserves</option>
+                                        <option value="DOD">U.S. Department of Defense</option>
+                                        <option value="PHSCC">U.S. PHS CC</option>
+                                        <option value="USPHS">U.S. USPHS</option>
+                                        <option value="NOAACorps">U.S. NOAA Corps</option>
+                                        <option value="Merchant">U.S. WWII Merchant Marines</option>
+                                        <option value="Military Academy">U.S. Military Academy</option>
+                                        <option value="Naval Academy">U.S. Naval Academy</option>
+                                        <option value="Air Force Academy">U.S. Air Force Academy</option>
+                                        <option value="Coast Guard Academy">U.S. Coast Guard Academy</option>
+                                        <option value="Merchant Marine Academy">U.S. Merchant Marine Academy</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleSelect1">When did you or your family member serve?</label>
+                        <select class="form-control" id="exampleSelect1">
+                                        <option selected>Choose...</option>
+                                        <option value='WWII'>WWII</option>
+                                        <option value='Korea'>Korea</option>
+                                        <option value='Vietnam'>Vietnam</option>
+                                        <option value='Lebanon or Grenada'>Lebanon or Grenada</option>
+                                        <option value='Desert Shield/Desert Storm'>Desert Shield/Desert Storm</option>
+                                        <option value='Post 9/11 (including OEF/OIF)'>Post 9/11 (including OEF/OIF)</option>
+                                        <option value='Peacetime (including Cold War)'>Peacetime (including Cold War)</option>
+                            </select>
+                    </div>
+
+                    <div class="verification">
+                        <legend>Verify Your Eligibility</legend>
+                        <p>To enroll, you are required to affirm your or your family member's military credentials in this application.
+                            We may request certain documentation in verifying your enrollment. There are severe criminal
+                            penalties for fraud under Federal Statutes of the U.S. Penal Code. If we find evidence of misrepresentation
+                            or abuse, we will inform the appropriate authorities.
+                        </p>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Affidavit of Military Status. I attest that I am serving or have served, or that my family member is serving or has served, in the branch of service selected above and the service period selected above.
+    </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary pull-left" style="margin-top:10px;">Back</button>
+                    <button type="submit" class="btn btn-primary pull-right" style="margin-top:10px;">Next</button>
+                </form>
+            </div>
+            <!--End Main Form-->
+
+            <!--Start Sidebar with Member Card-->
+            <div class="col-sm-5">
+                <div class="member-card">
+                <img class="img-responsive" src="images/blank_mem_card.png" style="padding-top:25px;padding-bottom:25px;">
+
+                <div class="member-card-name">
+                    <h4 class="member-name">Scott Higgins</h4>
+                </div>
+                <div class="member-card-valid-date">
+                    <p class="valid-date">1/1/18</p>
+                </div>
+                </div>
+
+
+                <!--<div class="member-card-name" id="member_card_name">
+                </div>
+                <div class="member-card-valid-date">
+                    1/12/18
+                </div>-->
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Summary</h3>
+                    </div>
+                    <div class="panel-body">
+                        My name is Scott Higgins. I am an Army Veteran.
+                    </div>
+                </div>
+
+            </div>
+            <!--End Sidebar With Member Card-->
+
+        </div>
+    </div>
+    <!--End Main Container-->
+
+</body>
+
+</html>

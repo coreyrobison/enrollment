@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enroll Today with Veteran's Advantage</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="enrollment.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_signup" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+        <a class="navbar-brand" href="/"><img src="/images/va-logo.png" style="height:32px;"></a>
+        <div class="collapse navbar-collapse" id="nav_signup">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active" data-step-nav="1">
+                    <a href="#">
+                        <div class="nav-active-container"><span class="nav-active-circle">1 </span>
+                            <div> Personal Infomation</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="2">
+                    <a href="#">
+                        <div class="nav-active-container"><span>2 </span>
+                            <div> Member Plan</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="3">
+                    <a href="#">
+                        <div class="nav-active-container"><span>3 </span>
+                            <div> Family Members</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="4">
+                    <a href="#">
+                        <div class="nav-active-container"><span>4</span>
+                            <div> Wounded Vet</div>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" data-step-nav="5">
+                    <a href="#">
+                        <div class="nav-active-container"><span>5 </span>
+                            <div> Payment Method</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+    
+    
+    
+    
+    <div data-step="3" class="step-off">
+        <div class="row">
+            <div class="container">
+                <h1 class="title-bold enrollment-title-margin">We are almost done.<br> Enroll up to 4 Family Members.</h1>
+                <div id="family_member_container">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <select name="family_member[]['type']" class="form-control enrollment-input-select">
+                                            <option value="" selected>Please Select Family Relationship</option>
+                                            <option value="father">Father</option>
+                                            <option value="mother">Mother</option>
+                                            <option value="sibling">Siblings</option>
+                                            <option value="spouse">Spouse</option>
+                                            <option value="child">Child</option>
+                                        </select>
+                            <input class="form-control enrollment-input" name="family_member[]['family_mem_name']" placeholder="Please Enter Family Member's Full Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 new-family-button">
+                    <button class="btn btn-primary btn-lg va-btn-primary-outline" type="button" id="add_new_family_button">Add A Family Member</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-lg va-btn-primary" data-step="4" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

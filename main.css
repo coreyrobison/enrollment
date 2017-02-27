@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Poppins');
+@font-face {
+    font-family: 'Officina';
+    src: url('../fonts/officina-sans.ttf');
+}
+
+@font-face {
+    font-family: 'Officina-bold';
+    src: url('../fonts/officina-sans-bold.ttf');
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+h1,
+h2,
+h3 {
+    font-family: Poppins;
+}
+
+.m-t-50 {
+    margin-top: 50px;
+}
+
+.logo-row-img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo-row {
+    height: 96px;
+    background: #f3f5f6;
+}
+
+.small-button-font {
+    font-size: 14px;
+}
+
+.front-title {
+    color: #ffffff;
+    font-weight: 300;
+    text-shadow: 1px 2px 3px #000;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0px auto;
+    font-size: 32px;
+    z-index: 2;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.join-button {
+    border-radius: 10px;
+    height: 64px;
+    width: 250px;
+    background: #2e88bc;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    outline: none;
+    border: none;
+}
+
+.join-button:active,
+.join-button:focus {
+    outline: none;
+}
+
+.hero-banner {
+    height: 580px !important;
+    overflow: hidden;
+    width: 100%;
+    background: url('/images/temp/mil_fam2.jpg') no-repeat center 9%;
+    background-size: cover;
+    position: relative;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.title-bold,
+.welcome-title,
+.welcome-subtitle {
+    font-weight: 700;
+}
+
+.welcome-subtitle {
+    text-align: center;
+    font-size: 5em;
+}
+
+.welcome-title {
+    color: #a51634;
+    text-align: center;
+    font-size: 5em;
+}
+
+.enrollment-input,
+.enrollment-input-select {
+    min-height: 40px;
+    margin: 4px auto;
+}
+
+.enrollment-input-select {
+    min-height: 60px !important;
+    height: 60px !important;
+}
+
+.welcome-title-container {
+    margin-top: 200px;
+}
+
+
+/*Nav*/
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background: transparent;
+    color: #fe5252;
+    border-bottom: 1px solid #fe5252;
+    border-radius: 0;
+}
+
+.nav>li>a {
+    border-radius: 0;
+    background: transparent;
+    color: #b7b7b7;
+    font-weight: bold;
+}
+
+.nav>li>a>div>span {
+    margin-right: 4px;
+}
+
+.nav-active-circle {
+    position: relative;
+    background: #fe5252;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.nav-active-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/*Buttons*/
+.btn-primary,
+.btn-primary-outline {
+    width: 30%;
+    background: #0094fe;
+    color: #ffffff;
+    border: none;
+    min-height: 60px;
+    outline: none !important;
+}
+
+{
+    background: inherit;
+}
+
+.btn-primary-outline {
+    outline: 1px solid #0094fe;
+    background: transparent !important;
+    border: 1px solid #0094fe;
+    color: #0094fe !important;
+}
+
+.btn-primary-outline:hover,
+.btn-primary-outline:active {
+    background: transparent !important;
+}
+
+.btn-primary:hover {
+    background: #5bb9fe !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+    background: #0094fe !important;
+}
+
+.plan-rectangle,
+.plan-rectangle-active {
+    /*height        : 335px;*/
+    height: 400px;
+    background: #003399;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .5s;
+}
+
+/*Plans*/
+.plan-rectangle-active {
+    background: #fe5252;
+    transform: scale(1.1);
+    box-shadow: 1px 2px 3px #bbbbbb;
+}
+
+.plan-length {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.plan-price {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.price-sup {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 300;
+    position: relative;
+    top: -60px;
+}
+
+.price-sign {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 32px;
+    position: relative;
+    top: -44px;
+}
+
+.price-italic {
+    font-style: italic;
+}
+
+.price-thin {
+    font-weight: 300;
+}
+
+.plan-bold {
+    font-weight: bold;
+}
+
+.plan-cancel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plan-underline {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333333;
+}
+
+.spacer {
+    margin: 20px 0;
+}
+
+.enrollment-title-margin {
+    margin-bottom: 50px;
+}
+
+.completed-step-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #0094fe;
+}
+
+.completed-step {
+    position: relative;
+    background: #0094fe;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.completed-step:after {
+    content: "\2713";
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*Ribbons */
+
+.ribbon-box {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #BBB;
+    background: #EEE;
+}
+
+.ribbon {
+    position: absolute;
+    right: 69.5%;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+    transition: all .5s;
+    transform: translate3d(0, 0, 0);
+}
+
+.ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #fe5252;
+    background: linear-gradient(#fe5252 0%, #fe5252 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+}
+
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #fe5252;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #fe5252;
+    padding: 30px;
+}
+
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #fe5252;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #fe5252;
+    padding: 30px;
+}
+
+.ribbon-active {
+    position: absolute;
+    right: 69.5%;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+    transition: all .5s;
+    transform: translate3d(-5px, -2px, 0);
+}
+
+.ribbon-active span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #0094fe;
+    background: linear-gradient(#0094fe 0%, #0094fe 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+}
+
+.ribbon-active span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #0094fe;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #0094fe;
+    padding: 30px;
+}
+
+.ribbon-active span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #0094fe;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #0094fe;
+    padding: 30px;
+}
+
+
+/*Member Card and Summary*/
+
+.summary-square {
+    box-shadow: 1px 2px 3px #bbbbbb;
+    border: 1px solid #bbbbbb;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.one-card,
+.one-card-front,
+.two-card {
+    position: relative;
+    height: 25px;
+    width: 37px;
+    border-radius: 5px;
+    background: #b1aeae;
+    z-index: 1;
+}
+
+.one-card-front {
+    top: -10px;
+}
+
+.two-card {
+    left: 10px;
+    top: 6px;
+    background: #c1c1c1;
+    z-index: -1;
+}
+
+.nodisplay {
+    display: none;
+}
+
+.steps,
+.step-on,
+.step-off {
+    position: relative;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    perspective-origin: center center;
+}
+
+.step-on {
+    /*position  : absolute;*/
+    top: 0;
+    left: 0;
+    transform: rotateX(0deg);
+}
+
+.step-off {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(90deg) translateZ(-1000px) translateY(1000px);
+}
+
+.new-family-button {
+    margin: 20px 0;
+}
+
+.wounded-vet-counter-number {
+    font-size: 6em;
+    color: #666666;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.wounded-vet-usd {
+    font-size: 1em;
+    color: #bbbbbb;
+    background: transparent;
+    border: none;
+}
+
+.wounded-vet-counter-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    color: #bbbbbb;
+}
+
+.margin-bottom-spacer {
+    min-height: 100px;
+}
+
+.counter-triangle {
+    font-size: .5em;
+    cursor: pointer;
+}
+
+.wounded-vet-arrow {
+    height: 24px;
+    width: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.welcome-links-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome-link-rectangle {
+    height: 76px;
+    box-shadow: 1px 4px 3px #bbbbbb;
+    margin: 10px;
+    background: #ffffff;
+    color: #00aaff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Remove Spinner Pointers for input[type="number"]*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /* Removes leftover margin */
+}
+
+
+/* Hide Popup from Bootstrap*/
+
+
+/* Mobile Tweaks */
+
+@media (max-width: 750px) {
+    .member-card {
+        min-height: 198px;
+    }
+    .member-card-name {
+        font-size: 2em;
+    }
+    .member-card-valid-date {
+        font-size: 1em;
+    }
+}
